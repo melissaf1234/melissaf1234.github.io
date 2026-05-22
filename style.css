@@ -38,6 +38,10 @@ body {
 }
 
 .header-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  gap: 34px;
+  align-items: center;
   padding: 58px 0 38px;
 }
 
@@ -69,6 +73,16 @@ h1 {
   margin: 0 0 10px;
   font-size: clamp(2rem, 6vw, 3.35rem);
   letter-spacing: 0;
+}
+
+.profile-photo {
+  width: 230px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(49, 95, 85, 0.16);
 }
 
 h2 {
@@ -156,6 +170,14 @@ a:focus {
   background: var(--accent-soft);
 }
 
+.spotify-player {
+  display: block;
+  max-width: 720px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 12px;
+}
+
 strong {
   font-weight: 700;
 }
@@ -187,7 +209,13 @@ em {
   }
 
   .header-content {
+    grid-template-columns: 1fr;
     padding: 38px 0 28px;
+  }
+
+  .profile-photo {
+    width: min(260px, 100%);
+    justify-self: start;
   }
 
   section {
