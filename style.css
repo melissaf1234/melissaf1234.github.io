@@ -39,10 +39,10 @@ body {
 
 .header-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 230px;
-  gap: 34px;
+  grid-template-columns: minmax(0, 1fr) 176px;
+  gap: 28px;
   align-items: center;
-  padding: 58px 0 38px;
+  padding: 48px 0 34px;
 }
 
 .eyebrow,
@@ -76,13 +76,20 @@ h1 {
 }
 
 .profile-photo {
-  width: 230px;
-  aspect-ratio: 3 / 4;
+  width: 176px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center;
   border: 1px solid var(--rule);
   border-radius: 8px;
   box-shadow: 0 18px 45px rgba(49, 95, 85, 0.16);
+}
+
+.section-note {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.98rem;
 }
 
 h2 {
@@ -214,7 +221,7 @@ em {
   }
 
   .profile-photo {
-    width: min(260px, 100%);
+    width: min(190px, 100%);
     justify-self: start;
   }
 
